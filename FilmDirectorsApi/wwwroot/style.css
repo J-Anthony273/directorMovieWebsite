@@ -1,0 +1,33 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { font-family: sans-serif; background: #111; color: #eee; }
+
+header { padding: 1.5rem 2rem; border-bottom: 1px solid #333; }
+header h1 { font-size: 1.5rem; }
+
+main { display: grid; grid-template-columns: 200px 1fr 350px; height: calc(100vh - 65px); }
+
+aside { padding: 1.5rem; border-right: 1px solid #333; overflow-y: auto; }
+aside h2 { font-size: 1rem; color: #aaa; margin-bottom: 1rem; }
+aside ul { list-style: none; }
+aside li { padding: 0.6rem 0.8rem; border-radius: 6px; cursor: pointer; }
+aside li:hover { background: #222; }
+
+#films-panel { padding: 1.5rem; overflow-y: auto; }
+#films-heading { font-size: 1.2rem; margin-bottom: 1.5rem; color: #aaa; }
+#films-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 1rem; }
+
+.film-card { cursor: pointer; border-radius: 8px; overflow: hidden; background: #1a1a1a; transition: transform 0.2s; }
+.film-card:hover { transform: scale(1.03); }
+.film-card img { width: 100%; display: block; }
+.film-title { padding: 0.5rem; font-size: 0.85rem; }
+
+#detail-panel { padding: 1.5rem; border-left: 1px solid #333; overflow-y: auto; position: relative; }
+#detail-panel.hidden { display: none; }
+#close-detail { position: absolute; top: 1rem; right: 1rem; background: none; border: none; color: #eee; font-size: 1.2rem; cursor: pointer; }
+#detail-poster { width: 100%; border-radius: 8px; margin-bottom: 1rem; }
+#detail-title { font-size: 1.2rem; margin-bottom: 0.5rem; }
+#detail-score { color: #f5c518; margin-bottom: 1rem; font-weight: bold; }
+#detail-overview { color: #ccc; line-height: 1.6; margin-bottom: 1.5rem; font-size: 0.9rem; }
+#detail-cast { list-style: none; }
+#detail-cast li { padding: 0.4rem 0; border-bottom: 1px solid #222; font-size: 0.9rem; color: #bbb; }

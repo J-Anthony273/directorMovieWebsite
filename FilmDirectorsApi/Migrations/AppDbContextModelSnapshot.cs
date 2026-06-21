@@ -37,9 +37,70 @@ namespace FilmDirectorsApi.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("TmdbPersonId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.ToTable("Directors");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Christopher Nolan",
+                            Nationality = "British",
+                            TmdbPersonId = 525
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Martin Scorsese",
+                            Nationality = "American",
+                            TmdbPersonId = 1032
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Quentin Tarantino",
+                            Nationality = "American",
+                            TmdbPersonId = 138
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Name = "Stanley Kubrick",
+                            Nationality = "American",
+                            TmdbPersonId = 240
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Name = "Steven Spielberg",
+                            Nationality = "American",
+                            TmdbPersonId = 488
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Name = "David Fincher",
+                            Nationality = "American",
+                            TmdbPersonId = 7467
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Name = "Alfred Hitchcock",
+                            Nationality = "British",
+                            TmdbPersonId = 2636
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Name = "Ridley Scott",
+                            Nationality = "British",
+                            TmdbPersonId = 578
+                        });
                 });
 
             modelBuilder.Entity("FilmDirectorsApi.Models.Film", b =>

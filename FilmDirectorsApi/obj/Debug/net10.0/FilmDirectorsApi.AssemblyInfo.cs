@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FilmDirectorsApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+77c21d084b8be388916595f8dc456f31b5daaede")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae2192ba1f09686c59b853769e6bd345b672dff0")]
 [assembly: System.Reflection.AssemblyProductAttribute("FilmDirectorsApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FilmDirectorsApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

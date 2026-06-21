@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Directors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Film Directors</h1>
+    </header>
+
+    <main>
+        <aside id="directors-panel">
+            <h2>Directors</h2>
+            <ul id="directors-list"></ul>
+        </aside>
+
+        <section id="films-panel">
+            <h2 id="films-heading">Select a director</h2>
+            <div id="films-grid"></div>
+        </section>
+
+        <section id="detail-panel" class="hidden">
+            <button id="close-detail">✕</button>
+            <img id="detail-poster" src="" alt="">
+            <h2 id="detail-title"></h2>
+            <p id="detail-score"></p>
+            <p id="detail-overview"></p>
+            <h3>Top Cast</h3>
+            <ul id="detail-cast"></ul>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
